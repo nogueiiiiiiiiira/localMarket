@@ -112,3 +112,16 @@ h3{
     }
 
 }
+
+h1::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: pink;
+    display: block;
+    transition: 0.5s;
+}
+
+h1:hover::after {
+    width: 100%;
+}
